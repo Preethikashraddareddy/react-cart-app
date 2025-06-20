@@ -1,12 +1,23 @@
-# React + Vite
+A minimal e-commerce cart application built using React, Vite, Tailwind CSS, and Context API.
+Users can browse products, add them to cart, update quantities, remove items, and complete checkout.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---Features
+Product listing (static data)
+Add to Cart
+Increment/Decrement item quantity
+Remove items from cart
+Real-time total price calculation
+Checkout with success message
+Global state management using React Context
+Built with Vite and styled with Tailwind CSS
 
-Currently, two official plugins are available:
+--Tech Stack
+React
+Vite
+Tailwind CSS
+React Router
+React Context API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was created as part of my front-end learning journey.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -27,6 +27,13 @@ const handleDecrement = (id)=>{
   setCartItems(updatedCart)
   }
 }
+const handleCheckout = ()=>{
+  alert("Order Placed Successfully!");
+  setTimeout(()=>(
+    setCartItems([])
+  ), 2000)
+  
+}
   return (
     <div className='grid grid-cols-1 m-10'>
       {cartItems.map((item)=>(
@@ -45,6 +52,8 @@ const handleDecrement = (id)=>{
       {totalPrice===0?(<p className='font-bold text-lg text-center'>No Items in cart</p>):
        (<p className='font-semibold text-lg'>Total: ${totalPrice}</p>)
       }
+      {cartItems.length>0?(<button className='border rounded bg-blue-500 hover:bg-blue-600 text-white p-2' 
+      onClick={handleCheckout}>Checkout</button>):""}
     </div>
   )
 }
