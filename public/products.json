@@ -1,0 +1,203 @@
+[
+    {
+      "id": 1,
+      "name": "Classic Denim Jacket",
+      "price": 1299,
+      "image": "/images/denim-jacket.jpg",
+      "category": "Men",
+      "description": "Rugged denim jacket for everyday wear.",
+      "rating": 4.5,
+      "isFeatured": true
+    },
+    {
+      "id": 2,
+      "name": "Slim Fit T-Shirt",
+      "price": 599,
+      "image": "/images/slim-tshirt.jpg",
+      "category": "Men",
+      "description": "Slim fit cotton t-shirt, breathable and light.",
+      "rating": 4.3,
+      "isFeatured": true
+    },
+    {
+      "id": 3,
+      "name": "Casual Sneakers",
+      "price": 1799,
+      "image": "/images/sneakers.jpg",
+      "category": "Men",
+      "description": "Comfortable casual sneakers for daily wear.",
+      "rating": 4.4,
+      "isFeatured": false
+    },
+    {
+      "id": 4,
+      "name": "Leather Wallet",
+      "price": 699,
+      "image": "/images/wallet.jpg",
+      "category": "Men",
+      "description": "Genuine leather wallet with card slots.",
+      "rating": 4.2,
+      "isFeatured": false
+    },
+    {
+      "id": 5,
+      "name": "Basic White Tee",
+      "price": 399,
+      "image": "/images/white-tee.jpg",
+      "category": "Men",
+      "description": "Soft basic white t-shirt.",
+      "rating": 4.0,
+      "isFeatured": false
+    },
+    {
+      "id": 6,
+      "name": "Sports Watch",
+      "price": 899,
+      "image": "/images/sports-watch.jpg",
+      "category": "Men",
+      "description": "Waterproof sports watch with timer.",
+      "rating": 4.6,
+      "isFeatured": true
+    },
+    {
+      "id": 7,
+      "name": "Floral Dress",
+      "price": 1499,
+      "image": "/images/floral-dress.jpg",
+      "category": "Women",
+      "description": "Elegant floral dress for casual wear.",
+      "rating": 4.8,
+      "isFeatured": true
+    },
+    {
+      "id": 8,
+      "name": "Maxi Dress",
+      "price": 1699,
+      "image": "/images/maxi-dress.jpg",
+      "category": "Women",
+      "description": "Comfortable flowy maxi dress.",
+      "rating": 4.6,
+      "isFeatured": true
+    },
+    {
+      "id": 9,
+      "name": "Women's Running Shoes",
+      "price": 1999,
+      "image": "/images/running-shoes.jpg",
+      "category": "Women",
+      "description": "Lightweight shoes for daily runs.",
+      "rating": 4.6,
+      "isFeatured": true
+    },
+    {
+      "id": 10,
+      "name": "Women's Handbag",
+      "price": 999,
+      "image": "/images/handbag.jpg",
+      "category": "Women",
+      "description": "Stylish handbag for daily use.",
+      "rating": 4.5,
+      "isFeatured": false
+    },
+    {
+      "id": 11,
+      "name": "Yoga Pants",
+      "price": 799,
+      "image": "/images/yoga-pants.jpg",
+      "category": "Women",
+      "description": "Stretchable yoga pants for comfort.",
+      "rating": 4.4,
+      "isFeatured": false
+    },
+    {
+      "id": 12,
+      "name": "Scarf Set",
+      "price": 499,
+      "image": "/images/scarf.jpg",
+      "category": "Women",
+      "description": "Set of 2 fashionable scarves.",
+      "rating": 4.3,
+      "isFeatured": false
+    },
+    {
+      "id": 13,
+      "name": "Cartoon T-Shirt",
+      "price": 499,
+      "image": "/images/kids-cartoon.jpg",
+      "category": "Kids",
+      "description": "Fun cartoon print t-shirt.",
+      "rating": 4.3,
+      "isFeatured": true
+    },
+    {
+      "id": 14,
+      "name": "Kids Sports Shoes",
+      "price": 1199,
+      "image": "/images/kids-shoes.jpg",
+      "category": "Kids",
+      "description": "Supportive kids shoes for play.",
+      "rating": 4.2,
+      "isFeatured": true
+    },
+    {
+      "id": 15,
+      "name": "Kids Hoodie",
+      "price": 899,
+      "image": "/images/kids-hoodie.jpg",
+      "category": "Kids",
+      "description": "Warm and comfy hoodie for kids.",
+      "rating": 4.5,
+      "isFeatured": false
+    },
+    {
+      "id": 16,
+      "name": "Girls Party Dress",
+      "price": 1099,
+      "image": "/images/party-dress.jpg",
+      "category": "Kids",
+      "description": "Colorful dress perfect for parties.",
+      "rating": 4.6,
+      "isFeatured": true
+    },
+    {
+      "id": 17,
+      "name": "Boys Jeans",
+      "price": 799,
+      "image": "/images/boys-jeans.jpg",
+      "category": "Kids",
+      "description": "Classic fit jeans for boys.",
+      "rating": 4.1,
+      "isFeatured": false
+    },
+    {
+      "id": 18,
+      "name": "Kids Sunglasses",
+      "price": 299,
+      "image": "/images/kids-sunglasses.jpg",
+      "category": "Kids",
+      "description": "UV protected sunglasses for kids.",
+      "rating": 4.0,
+      "isFeatured": false
+    },
+    {
+      "id": 19,
+      "name": "Cap Pack",
+      "price": 299,
+      "image": "/images/caps.jpg",
+      "category": "Accessories",
+      "description": "Pack of 2 stylish caps.",
+      "rating": 4.2,
+      "isFeatured": false
+    },
+    {
+      "id": 20,
+      "name": "Unisex Belt",
+      "price": 399,
+      "image": "/images/belt.jpg",
+      "category": "Accessories",
+      "description": "Classic leather belt for all.",
+      "rating": 4.3,
+      "isFeatured": false
+    }
+  ]
+  

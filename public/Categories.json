@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Mens Fashion",
+      "image": "/images/Mens.jpg",
+      "category": "Men"
+    },
+    { 
+      "id": 2,
+      "name": "Womens Fashion",
+      "image": "/images/Womens.jpg",
+      "category": "Women"
+
+    },
+    {
+      "id": 3,
+      "name": "Kids Fashion",
+      "image": "/images/Kids.jpg",
+      "category": "Kids"
+    }
+]
