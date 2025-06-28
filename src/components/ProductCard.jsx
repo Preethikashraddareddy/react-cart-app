@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
-import { WishlistContext } from '../context/WishListContext'
+import { WishlistContext } from '../context/WishlistContext'
 import { IoHeartOutline, IoHeart } from 'react-icons/io5'
 
 const ProductCard = ({ id, name, price, image, category, rating }) => {
