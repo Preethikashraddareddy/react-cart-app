@@ -1,38 +1,39 @@
 import React, { useEffect, useState } from 'react'
-import ProductCard from '../components/ProductCard'
+import ProductCard from '../components/ProductCard';
 
-const Men = () => {
-  const [products, setProducts] = useState([])
-
-  useEffect(()=>{
-    fetch('/products.json')
-    .then(res=>res.json())
-    .then(data=>{
-      const menItems = data.filter(item=>item.category==="Men");
-      setProducts(menItems)
-    })
-  }, [])
-
-  
+const Women = () => {
+const [products, setProducts] = useState([]);
+useEffect(()=>{
+  fetch('./products.json')
+  .then(res=>res.json())
+  .then(data=>{
+    const menItems = data.filter(product=>product.category==="Men")
+    setProducts(menItems)
+  })
+  .catch(error => console.error('Error fetching products:', error))
+})
   return (
-    <div>
-      <h1 className='text-center text-4xl text-balance m-10'>Explore Men's Fashion</h1>
-      <p className='text-center text-2xl font-medium'>Find everyday essentials and trending styles curated just for men.</p>
-      <div className='grid grid-cols-3 gap-5 m-10'>
+    <div className='py-25 px-4'>
+       <h1 className='text-center text-4xl font-bold mb-4'>Explore Men's Fashion</h1>
+       <p className='text-center text-xl text-gray-600 mb-10'>Find everyday essentials and trending styles curated just for men.</p>
+      {products.length>0?(
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto'>
       {products.map((product)=>(
-        <ProductCard 
+        <ProductCard
         key={product.id}
         id={product.id}
         name={product.name}
         price={product.price}
         image={product.image}
         category={product.category}
-        rating={product.rating}
-        />
+        rating={product.rating}/>
       ))}
-    </div>
+      </div>
+      ):(
+        <p className="text-center text-gray-500">Loading products...</p>
+      )}
     </div>
   )
 }
 
-export default Men;
+export default Women

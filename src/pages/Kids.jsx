@@ -10,12 +10,14 @@ useEffect(()=>{
     const kidsItems = data.filter(product=>product.category==="Kids")
     setProducts(kidsItems)
   })
+  .catch(error => console.error('Error fetching products:', error))
 })
   return (
-    <div>
-       <h1 className='text-center text-4xl text-balance m-10'>Trendy Picks for Kids</h1>
-       <p className='text-center text-2xl font-medium'>Fun, colorful, and comfy — explore clothing and accessories your little ones will love.</p>
-      <div className='grid grid-cols-3 gap-5 m-10'>
+    <div className='py-24 px-4'>
+       <h1 className='text-center text-4xl font-bold mb-4'>Trendy Picks for Kids</h1>
+       <p className='text-center text-xl text-gray-600 mb-10'>Fun, colorful, and comfy — explore clothing and accessories your little ones will love.</p>
+       {products.length>0?(
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto'>
       {products.map((product)=>(
         <ProductCard
         key={product.id}
@@ -27,6 +29,9 @@ useEffect(()=>{
         rating={product.rating}/>
       ))}
       </div>
+      ):(
+        <p className="text-center text-gray-500">Loading products...</p>
+      )}
     </div>
   )
 }
