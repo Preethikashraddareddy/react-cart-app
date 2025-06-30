@@ -25,7 +25,7 @@ const AllProducts = () => {
   }
 
   return (
-    <div className='p-10'>
+    <div className='p-10 py-25'>
       <h1 className='text-center text-4xl font-bold mb-6'>All Products</h1>
 
       {/* Search & Sort controls */}

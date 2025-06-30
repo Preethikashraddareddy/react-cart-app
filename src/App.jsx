@@ -11,6 +11,7 @@ import Wishlist from './pages/Wishlist'
 import AllProducts from './pages/AllProducts'
 import Profile from './pages/Profile'
 
+
 const App = () => {
   return (
     <div>

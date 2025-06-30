@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Profile = () => {
   const user = {
-    name: 'Preethika A',
-    email: 'preethika@example.com',
+    name: 'JohnDee',
+    email: 'john@example.com',
     phone: '+91 9876543210',
     address: 'Bangalore, India'
   }
@@ -76,3 +76,4 @@ const Profile = () => {
 }
 
 export default Profile
+

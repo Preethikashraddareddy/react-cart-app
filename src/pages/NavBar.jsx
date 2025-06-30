@@ -10,11 +10,11 @@ const NavBar = () => {
   const { cartItems } = useContext(CartContext)
   const [isOpen, setIsOpen] = useState(false)
 
+  const cartCount = cartItems.length > 9 ? '9+' : cartItems.length
+
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
-
-  const cartCount = cartItems.length > 9 ? '9+' : cartItems.length
 
   return (
     <nav className='fixed top-0 left-0 w-full z-50 bg-white shadow-md p-4 border-b'>
@@ -23,8 +23,8 @@ const NavBar = () => {
         {/* Logo */}
         <Link to='/' className='text-lg font-bold'>TrendEase</Link>
 
-        {/* Desktop Links */}
-        <div className='hidden md:flex space-x-8'>
+        {/* Desktop Nav Links */}
+        <div className='hidden lg:flex space-x-8'>
           <Link to='/' className='hover:font-bold'>Home</Link>
           <Link to='/about' className='hover:font-bold'>About</Link>
           <Link to='/all-products' className='hover:font-bold'>All Products</Link>
@@ -34,8 +34,7 @@ const NavBar = () => {
         </div>
 
         {/* Icons + Hamburger */}
-        <div className='flex items-center space-x-4'>
-
+        <div className='flex items-center space-x-6'>
           <Link to='/cart' className='relative flex flex-col items-center'>
             <PiShoppingCart className='size-5' />
             <span className='text-sm'>Cart</span>
@@ -56,16 +55,16 @@ const NavBar = () => {
             <span className='text-sm'>Profile</span>
           </Link>
 
-          {/* Mobile Hamburger */}
-          <button className='md:hidden' onClick={toggleMenu}>
+          {/* Hamburger for Mobile */}
+          <button className='lg:hidden' onClick={toggleMenu}>
             {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Links */}
+      {/* Mobile Nav Links */}
       {isOpen && (
-        <div className='md:hidden px-4 pt-4 pb-2 space-y-2 bg-white'>
+        <div className='lg:hidden px-4 pt-4 pb-2 space-y-2 bg-white'>
           <Link to='/' className='block hover:font-bold'>Home</Link>
           <Link to='/about' className='block hover:font-bold'>About</Link>
           <Link to='/all-products' className='block hover:font-bold'>All Products</Link>
